@@ -23,3 +23,5 @@ int main()
 	printf("%d\n",ans);
 }
 ```
+## 第三題程式碼
+```c
