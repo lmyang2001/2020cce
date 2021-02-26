@@ -1,5 +1,6 @@
 # 2020cce
 ## 第一題程式碼
+```c
 #include <stdio.h>
 int main()
 {
@@ -9,6 +10,7 @@ int main()
 }
 
 ## 第二題程式碼
+```c
 #include <stdio.h>
 int main()
 {
