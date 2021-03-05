@@ -112,3 +112,19 @@ int MYPOWER(int a,int b)
 	return 0;
 }
 ```
+
+## 漸增數列相加
+```C
+#include <stdio.h>
+int main()
+{
+	int a;
+	scanf("%d" , &a);
+	int ans=0;
+	for(int i=2;i<=a;i++)
+	{
+	ans+=(i-1)*i;
+	}
+	printf("%d\n",ans);
+}
+```
