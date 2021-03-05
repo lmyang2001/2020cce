@@ -140,3 +140,7 @@ int main()
 	else printf("It is not a square ");
 }
 ```
+## 2進位轉10進位
+```C
+
+```
