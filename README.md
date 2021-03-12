@@ -326,3 +326,13 @@ int main()
 printf("\n");
 }
 ```
+## 計算幾周又幾天
+```C
+#include <stdio.h>
+int main()
+{
+int n;
+scanf("%d ",&n);
+printf("%d %d\n",(n/7),(n%7));
+}
+```
