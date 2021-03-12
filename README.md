@@ -347,3 +347,23 @@ int main()
 	else printf("%d\n",100+(n-2000)/500*5+5);
 }
 ```
+## 兩數間可被5整除的整數
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,max,min;
+	scanf("%d %d",&a,&b);
+	if(a>b) {max=a;min=b;}
+	else {max=b;min=a;}
+	for(int i=min;i<=max;i++)
+	{
+	if(i%5==0)
+	printf("%d\n",i);
+	}
+}
+## 
+```C
+
+```
+```
