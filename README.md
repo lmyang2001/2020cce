@@ -362,7 +362,8 @@ int main()
 	printf("%d\n",i);
 	}
 }
-## 整數間最大距離 
+```
+##   整數間最大距離 
 ```C
 #include <stdio.h>
 int main()
