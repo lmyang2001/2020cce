@@ -1,5 +1,5 @@
 # 2020cce
-## 第一題程式碼找零錢
+## 找零錢
 ```c
 #include <stdio.h>
 int main()
@@ -9,7 +9,7 @@ int main()
 	printf("%d=50*%d+5*%d+1*%d\n" , n,n/50,(n%50)/5,(n%5)/1);
 }
 ```
-## 第二題程式碼因數個數 
+## 因數個數 
 ```c
 #include <stdio.h>
 int main()
@@ -23,7 +23,7 @@ int main()
 	printf("%d\n",ans);
 }
 ```
-## 第三題程式碼找倍數
+## 找倍數
 ```c
 #include<stdio.h>
 int main()
@@ -38,7 +38,7 @@ int main()
 
 }
 ```
-## 第四題程式碼整數轉換為等級
+## 整數轉換為等級
 ```c
 #include <stdio.h>
 int main()
@@ -55,7 +55,7 @@ int main()
         printf("F\n");
 }
 ```
-## 第五題程式碼分式化簡
+## 分式化簡
 ```c
 #include <stdio.h>
 int main()
