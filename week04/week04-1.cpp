@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-struct POINT;{
+struct POINT{
 float x,y;
 };
 int main()
