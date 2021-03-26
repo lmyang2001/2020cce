@@ -380,3 +380,20 @@ int main()
 	printf("%d\n",max-min);
 	}
 ```
+## 除惡務盡 
+```C
+#include <stdio.h>
+int main()
+{
+	char a[100];
+	scanf("%s" ,&a); //將字串讀入依序放入陣列最後加上'\0'
+	int i=0;
+	while(a[i]!='\0')
+{
+	if(a[i]!='2')
+		printf("%c",a[i]);
+		i++;
+}
+	printf("\n");	
+}	
+```
