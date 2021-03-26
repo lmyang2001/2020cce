@@ -1,4 +1,83 @@
 # 2020cce
+## 計算商數 
+```C
+#include <stdio.h>
+int a[10000];
+int main()
+{
+	int a,b;
+  	scanf("%d%d",&a,&b);
+	printf("%d\n",a/b);
+}
+```
+## 三數極大 
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,c,max;
+	scanf("%d%d%d",&a,&b,&c);
+	max=a;
+	if(b>a&&b>c)
+	max=b;
+	if(c>a&&c>b)
+	max=c;
+	printf("%d\n",max);
+}
+```
+## N數之和 
+```C
+#include <stdio.h>
+int main()
+{
+	int N,c;
+	int sum=0;
+	scanf("%d" ,&N);
+	for(int i=1;i<=N;i++){
+	scanf("%d",&c);
+	sum=sum + c;
+	}
+		printf("%d\n",sum);
+}
+```
+## 絕對值函數
+```C
+#include <stdio.h>
+int f(int a)
+{
+	if(a>0) return a;
+	else return a*(-1);
+}
+int main(void)
+{
+	int n;
+	scanf("%d",&n);
+	printf("[%d]",f(n));
+	return 0;
+}
+```
+## 反序數字 
+```C
+#include <stdio.h> ///正+反=和
+int f(int n)
+{
+	int c;
+	int a=0;
+	while(n>0)
+	{
+		c=n%10;
+		n=n/10;
+		a=c+a*10;
+	}
+	return a;
+}
+int main()
+{
+	int n,a;
+	scanf("%d", &n);
+	printf("%d+%d=%d\n",n,f(a),n+f(a));
+	}
+```
 ## 找零錢
 ```c
 #include <stdio.h>
