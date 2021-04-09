@@ -1,4 +1,104 @@
 # 2020cce
+## 迴文判斷
+```C
+#include <stdio.h>
+#include <string.h>
+char a[10000];
+int main()
+{	
+	int len;
+	int i;
+	scanf("%s",&a);
+	len = strlen(a); ///strlen可取得字串長度
+	for(i=0;i<(len/2);i++){
+		if(a[i]!=a[len-1-i]) break;}
+		
+	if(i==(len/2)) printf("YES\n");
+	else printf("NO\n");
+}	
+```
+## 函數反序排列數字 
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b=0;
+	scanf("%d",&a);
+	while(a!=0){
+		b=b*10+a%10;
+		a=a/10;
+		}
+		printf("%d\n",b);
+}
+```
+## 陣列找出現次數
+```C
+#include <stdio.h>
+int main()
+{
+	char a[100]; 
+	int r=0;
+	int i;
+	for(int i=0;i<100;i++)
+	{
+	scanf("%d",&a[i]);
+		if(a[i]==0)   break;
+		r++;
+		}
+		int x;
+		scanf("%d",&x);
+		int count=0;
+		   ///計陣列個數
+		for(int i=0;i<r;i++)
+	  {
+			if(a[i]==x) count++;}
+			printf("%d\n",count);
+}
+```
+## 判斷大小 
+```C
+#include <stdio.h>
+int f(int a,int b){
+	if(a<b) return -1;
+	if(a==b) return 0;
+	if(a>b) return 1;
+}
+int main(){
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d",f(a,b));
+    return 0;
+}
+```
+## 計算一列整數的總和
+```C
+#include <stdio.h>
+int main()
+{
+	printf("Enter an integer ( 999 to end ): \n");
+	int n;
+	scanf("%d",&n);
+	int ans=0;
+	while(n!=999)
+	{
+		ans=ans+n;
+		printf("Enter an integer ( 999 to end ): \n");
+		scanf("%d" ,&n);
+	}
+	printf("The total is: %d",ans);
+}
+```
+## 計算餘數 
+```C
+#include <stdio.h>
+int a[10000];
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("%d",a%b);
+}
+```
 ## 計算商數 
 ```C
 #include <stdio.h>
