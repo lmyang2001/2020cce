@@ -2,10 +2,10 @@
 #include <string.h>
 #include <stdlib.h>
 char line[100][10];
-char temp[10]; ///¦r¥À.¤£¬O¦r¦ê
+char temp[10]; ///å­—æ¯.ä¸æ˜¯å­—ä¸²
 
 int compare(const void * p1, const void * p2)
-{                         ///§â«ü¼ĞP1(P2)Âà¦¨¦r¦êS1(S2)
+{                         ///æŠŠæŒ‡æ¨™P1(P2)è½‰æˆå­—ä¸²S1(S2)
 	char *s1 = (char*) p1;
 	char *s2 = (char*) p2;
 	return strcmp(s1 , s2 );
