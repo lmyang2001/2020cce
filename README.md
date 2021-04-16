@@ -304,6 +304,8 @@ int MYPOWER(int a,int b)
 ```
 
 ## 漸增數列相加
+輸入正整數n，計算1*2+2*3+3*4+…+(n-1)*n之和。 
+數字範圍：整數1 – 1000  
 ```C
 #include <stdio.h>
 int main()
