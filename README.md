@@ -62,24 +62,6 @@ int main(void){
 }
 */
 ```
-## 判斷迴文
-```C
-#include <stdio.h>
-#include <string.h>
-char a[10000];
-int main()
-{	
-	scanf("%s",&a);
-	int i;
-	int len;
-	len=strlen(a);
-	for(i=0;i<(len/2);i++){
-		if(a[i]!=a[len-1-i]) break; 
-	}
-	if(i==(len/2)) printf("YES");
-	else printf("NO");
-}
-```
 ## 計算餘數及列印 
 ```C
 #include <stdio.h>
