@@ -1,4 +1,126 @@
 # 2020cce
+## 最大公因數gcd 
+```C
+#include <stdio.h>
+int main()
+{
+	int min,a,b;
+	printf("Enter two integers: \n");
+	scanf("%d%d",&a,&b);
+	if(a>b) min=b;
+	else min=a;
+	int ans=1;
+	for(int i=2;i<=min;i++){
+	if(a%i==0&&b%i==0) ans=i;
+	}
+	printf("The greatest common divisor of %d and %d is %d\n",a,b,ans);
+}
+```
+## 字串長度
+```C
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[100],b[100];
+	scanf("%s%s",&a,&b);
+	int lena=strlen(a);
+	int lenb=strlen(b);
+	if(lena>lenb) printf("1");
+	else if(lenb>lena) printf("-1");
+	else{
+	printf("%d",strcmp(a,b));
+	}
+} 
+```
+##　函數判斷質數
+```C
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int prime(int n)
+{
+	int a=0,b=1;
+	for(int i=1;i<=n;i++){
+		if(n%i==0)a++;
+	}
+	if(a==2) b=1;
+		else b=0;
+		return b;
+}
+int main(){
+  int n;cin>>n;
+  cout<<"["<<prime(n)<<"]";
+  return 0;
+}
+/* 上方 C++ 的 main 函數 等價於 下方 C 的 main 函數
+int main(void){
+    int n;
+    scanf("%d", &n);
+    printf("[%d]", prime(n));
+    return 0;
+}
+*/
+```
+## 判斷迴文
+```C
+#include <stdio.h>
+#include <string.h>
+char a[10000];
+int main()
+{	
+	scanf("%s",&a);
+	int i;
+	int len;
+	len=strlen(a);
+	for(i=0;i<(len/2);i++){
+		if(a[i]!=a[len-1-i]) break; 
+	}
+	if(i==(len/2)) printf("YES");
+	else printf("NO");
+}
+```
+## 計算餘數及列印 
+```C
+#include <stdio.h>
+int main()
+{
+	int x,y;
+	scanf("%d%d",&x,&y);
+	printf("Enter two numbers: ");
+	printf("The remainder is %d\n",x%y);
+}
+```
+## 將一連串整數相乘 
+```C
+#include <stdio.h>
+char line[100];
+int main()
+{
+	int ans=1,n;
+	scanf("%d",&n);
+	printf("Enter the number of values to be processed: ");
+	for(int i=0;i<n;i++){
+	scanf("%d",&line[i]);
+	ans*=line[i];
+	printf("Enter a value: ");
+	}
+	printf("Product of the %d values is %d",n,ans);
+}
+```
+## 平年月份的天數 
+```C
+#include <stdio.h>
+int main()
+{
+	int N;
+	scanf("%d",&N);
+	if(N==2) printf("28");
+	else if(N==1||N==3||N==5||N==7||N==8||N==10||N==12)
+	printf("31");
+	else printf("30");
+}
+```
 ## 迴文判斷
 從鍵盤讀入1個4位數的整數(1000-9999)。如果該數字構成廻文(即由左而右，由右而左，順序相同)，則顯示YES。如果該數字未構成廻文，則顯示NO。 
 ```C
