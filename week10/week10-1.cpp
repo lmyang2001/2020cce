@@ -12,7 +12,7 @@ int main()
 		if( strcmp(line," ")==0 ) break;
 		printf("%s\n",line);
 		}
-	printf("======\n");
+	printf("====分隔線====\n");
 
 	}
 }
