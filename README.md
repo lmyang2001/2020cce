@@ -33,7 +33,7 @@ int main()
 	}
 } 
 ```
-##　函數判斷質數
+## 函數判斷質數
 ```C
 #include <stdio.h>
 #include <iostream>
