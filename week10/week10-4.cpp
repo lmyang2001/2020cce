@@ -20,7 +20,7 @@ int main()
 		//printf("%s\n",line);
 		N++;
 	}
-	printf("¦³´X´Ê¾ð? %d\n",N);
+	printf("有幾棵樹? %d\n",N);
 
 	qsort( tree, N, 32, compare);
 
@@ -28,6 +28,6 @@ int main()
 		printf("%s\n", tree[i] );
 
 	}
-		printf("====¤À¹j½u====\n");
+		printf("====分隔線====\n");
 	}
 }
