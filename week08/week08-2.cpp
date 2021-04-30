@@ -10,7 +10,7 @@ int main()
     int n;
     scanf("%d",&n);
 
-    for(int i=-;i<n;i++){
+    for(int i=0;i<n;i++){
     scanf("%s",line[i]);
     }
     qsort(line, n, 10, conpare);
