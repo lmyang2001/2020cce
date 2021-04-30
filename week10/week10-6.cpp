@@ -14,16 +14,16 @@ int main()
 	for(int t=0; t<T; t++){
 		int N=0;
 		while(gets(line)!=NULL ){
-		if( strcmp(line," ")==0 ) break;
-
+		if( strcmp(line,"")==0 ) break;
+		
 		strcpy( tree[N], line);
 		//printf("%s\n",line);
 		N++;
 	}
-	//printf("¦³´X´Ê¾ð? %d\n",N);
-
+	//printf("æœ‰å¹¾æ£µæ¨¹? %d\n",N);
+	
 	qsort( tree, N, 32, compare);
-
+	
 	if(t>0) printf("\n");
 	int ans=1;
 	printf("%s ",tree[0]);
