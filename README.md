@@ -1,4 +1,100 @@
 # 2020cce
+## 字串中的數字個數 
+```C
+#include <stdio.h>
+int main()
+{
+	int ans=0;
+	char c[80];
+	scanf("%s",&c);
+	int i=0;
+	while(c[i]!='\0'){
+	if(c[i]>='0'&&c[i]<='9') ans++;
+	i++;
+	}
+	printf("%d",ans);
+}
+```
+## 利用自訂函式最大值max與最小值min求出兩者之差
+```C
+
+```
+## 奇數之和 
+```C
+#include <stdio.h>
+int main()
+{
+	int N;
+	int ans=0;
+	scanf("%d",&N);
+	for(int i=1;i<=N;i++){
+	if(i%2!=0) ans=ans+i;
+	}
+	printf("%d",ans);
+}
+```
+## 兩數間可被7整除的數
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	for(int i=a;i<=b;i++){
+	if(i%7==0)
+	printf("%d ",i);
+	}
+}
+```
+## 整數二元四則運算 
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	char c;
+	scanf("%d %c %d",&a,&c,&b);
+	if(c=='+') printf("%d",a+b);
+	if(c=='-') printf("%d",a-b);
+	if(c=='*') printf("%d",a*b);
+	if(c=='/') printf("%d",a/b);
+
+}
+```
+## 幾日為星期幾 
+```C
+#include <stdio.h>
+int main()
+{		//1 2 3 4 5 6 7 8 9
+		//0 1 2 3 4 5 6 0 1
+	int n;
+	scanf("%d",&n);
+	n%=7;
+	if(n==0) printf("6");
+	if(n!=0) printf("%d",n-1);
+}
+
+```
+## 零錢總額 
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+	scanf("%d%d%d",&a,&b,&c);
+	printf("%d",50*a+5*b+1*c);
+}
+```
+## 兩數平方差
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("%d",a*a-b*b);
+}
+```
 ## 最大公因數gcd 
 ```C
 #include <stdio.h>
