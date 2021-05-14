@@ -73,7 +73,24 @@ int main()
 ```
 ## 三數組合
 ```C
-
+#include <stdio.h>
+int main()
+{
+	int a[3],i,j,temp;
+	for(i=0;i<3;i++)
+	{
+	scanf("%d",&a[i]);}
+	for(i=0;i<3;i++){
+	for(j=i;j<3;j++){
+	if(a[i]< a[j]) 
+	{	temp=a[j];
+		a[j]=a[i];
+		a[i]=temp;
+	}
+   }	
+ }
+    printf("%d",a[0]*100+a[1]*10+a[2]+1);
+}
 ```
 ## 找千位數
 ```C
