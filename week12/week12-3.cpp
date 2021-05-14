@@ -2,7 +2,7 @@
 char line[2000];
 int main()
 {
-	for(int t=0; gets(line); t++){
+	for(int t=0; gets(line); t++){ //Input
        int ans[256]={};
        char c[256]={};
        for(int i=0;i<256;i++) c[i]=i;
@@ -10,11 +10,11 @@ int main()
 	for(int i=0;line[i]!=0;i++){
        char c=line[i];
        ans[c]++;
-	}
-	for(int i=0; i<256; i++){
+	} //字串的For迴圈
+	for(int i=0; i<256; i++){    //排序
 		for(int j=i+1; j<256; j++){
 		if(ans[i]>ans[j] ){
-		int temp=ans[i];
+		int temp=ans[i]; //交換ans[]
 		ans[i]=ans[j];
 		ans[j]=temp;
 		char t=c[i]; //交換字母
@@ -32,7 +32,7 @@ int main()
 	}
 }
 	if(t>0)	printf("\n");
-		for(int i=0; i<256; i++){
+		for(int i=0; i<256; i++){  //Output
    if(ans[i]>0) printf("%d %d\n",c[i],ans[i]);
 		}
 	}
