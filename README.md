@@ -1,5 +1,6 @@
 # 2020cce
-##　數字個數
+
+## 數字個數
 ```C
 #include <stdio.h>
 int main()
