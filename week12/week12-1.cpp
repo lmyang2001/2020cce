@@ -1,3 +1,4 @@
+//## UVA10062
 #include <stdio.h>
 char line[2000];
 int main()
