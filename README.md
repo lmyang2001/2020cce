@@ -46,11 +46,30 @@ int main()
 ```
 ## 判斷平方數
 ```C
-
+#include <stdio.h>
+int main()
+{
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+	if(i*i==n) ans=i;
+	}
+	printf("%d",ans);
+}
 ```
 ## 計算質數個數 
 ```C
-
+#include <stdio.h>
+int main()
+{
+	int a,b,count=0,j; //計算質數個數
+	scanf("%d%d",&a,&b);
+	for(int i=a;i<=b;i++){  //跑 a~b
+		for(j=2;j<i;j++){
+		if(i%j==0) break;}
+		if(j==i) count++; } //第2層For完整跑完代表沒有數可整除i
+	printf("%d",count);
+}
 ```
 ## 三數組合
 ```C
