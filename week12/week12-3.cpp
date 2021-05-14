@@ -17,7 +17,7 @@ int main()
 		int temp=ans[i];
 		ans[i]=ans[j];
 		ans[j]=temp;
-		char t=c[i];
+		char t=c[i]; //交換字母
 		c[i]=c[j];
 		c[j]=t;
 		}
