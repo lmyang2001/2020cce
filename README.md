@@ -1,4 +1,63 @@
 # 2020cce
+##　數字個數
+```C
+
+```
+## 剩餘啤酒有幾手又幾瓶
+```C
+#include <stdio.h>
+int main()
+{
+	int p,d;
+	scanf("%d%d",&p,&d);
+	printf("%d %d",(p-6*d)/6,(p-6*d)%6);
+}
+```
+## 三數最小 
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,c,min;
+	scanf("%d%d%d",&a,&b,&c);
+	if(a<b&&a<c) min=a;
+	if(b<a&&b<c) min=b;
+	if(c<a&&c<b) min=c;
+	printf("%d\n",min);
+}
+```
+## 計算立方值 
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,c,d,e,f;
+	scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+	printf("%d\n%d\n%d\n%d\n%d\n%d\n",a*a*a,b*b*b,c*c*c,d*d*d,e*e*e,f*f*f);
+}
+```
+## 判斷平方數
+```C
+
+```
+## 計算質數個數 
+```C
+
+```
+## 三數組合
+```C
+
+```
+## 找千位數
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	printf("%d",n%10000/1000);
+}
+```
 ## 字串中的數字個數 
 ```C
 #include <stdio.h>
