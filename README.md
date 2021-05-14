@@ -1,7 +1,14 @@
 # 2020cce
 ##　數字個數
 ```C
-
+#include <stdio.h>
+int main()
+{
+	int a,ans=0;	    //End of File
+	while(scanf("%d",&a)!=EOF){
+	ans++; }
+	printf("%d",ans-1);
+}
 ```
 ## 剩餘啤酒有幾手又幾瓶
 ```C
