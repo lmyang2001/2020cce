@@ -10,6 +10,6 @@ void draw(){
    int s =second();
    fill(255,0,0);
    text("Now :"+h+":"+m+":"+s,100,100);
-   int total=h*60 + m*60 + s;
+   int total=h*60* + m*60 + s;
    text("總秒數:"+ total,100,200);
 }
