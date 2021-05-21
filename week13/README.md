@@ -6,3 +6,5 @@
 用textSize()調字大小,text()畫出字,void mousePressed()做按下去的動作
 ## 4. 時鐘
 字串 "Now" ":"   數h.m.s 
+## 5.至偏好設定改成標楷體即可打出中文
+利用 textFont()改成字型createFont()的標楷體, 甪乘上60 60 來算出總秒數
