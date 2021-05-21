@@ -1,5 +1,5 @@
-## 1.
-開啟Processing, 使用size()還有background()開出有背景色的窗
+## 1.下載 Processing
+開啟Processing, 使用size()還有background()開出有背景色的窗<小畫家可以看顏色>
 ## 2.
 做mousePressed的互動,先有void setup()及 void draw(),再用if(mousePressed) 及else來切換
 ## 3.
