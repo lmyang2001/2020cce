@@ -1,5 +1,5 @@
 ## 1.
-先設定背景大小顏色
+開啟Processing, 使用size()還有background()開出有背景色的窗
 
 
 ## 4.
