@@ -8,4 +8,4 @@ void draw(){
    int m =minute();
    int s =second();
    text("Now :"+h+":"+m+":"+s,100,100);
-}
+}     //字串 "Now" ":" 數h.m.s
