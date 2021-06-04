@@ -4,4 +4,6 @@ second()秒鐘,textSize()字型大小,test()畫出字,setup()做一次,draw()每
 利用餘數及減法,來做出9到0的倒數計時
 ## 3.Sound播出聲音
 先用Sketch-Library-Add Library加入Sound,接下來把mp3檔放進PDE寫程式的地方
-## 4.
+## 4.把第01,02,03合併
+以step02為主,插入step03的宣告、初始化、play播放,但每秒播60次,很吵
+## 5.
