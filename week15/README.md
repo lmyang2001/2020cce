@@ -10,4 +10,5 @@ second()秒鐘,textSize()字型大小,test()畫出字,setup()做一次,draw()每
 if( player.isPlaying() )時,要stop(), 否則 play(), 記得bell拉進去,程式打bell.mp3
 ### 5-2 把倒數計時放進來鐘聲
 if後加上 && !player.isPlaying()
-## 6.p5.js模式
+## 6. p5.js模式
+利用http://faculty.purchase.edu/joseph.mckay/p5jsconverter 轉換程式碼
