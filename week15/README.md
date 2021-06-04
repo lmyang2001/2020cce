@@ -8,3 +8,5 @@ second()秒鐘,textSize()字型大小,test()畫出字,setup()做一次,draw()每
 以step02為主,插入step03的宣告、初始化、play播放,但每秒播60次,很吵
 ## 5.播放bell
 if( player.isPlaying() )時,要stop(), 否則 play(), 記得bell拉進去,程式打bell.mp3
+#  5-2 把倒數計時放進來鐘聲
+if後加上 && !player.isPlaying()
