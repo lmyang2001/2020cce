@@ -6,4 +6,4 @@ second()秒鐘,textSize()字型大小,test()畫出字,setup()做一次,draw()每
 先用Sketch-Library-Add Library加入Sound,接下來把mp3檔放進PDE寫程式的地方
 ## 4.把第01,02,03合併
 以step02為主,插入step03的宣告、初始化、play播放,但每秒播60次,很吵
-## 5.
+## 5.播放bell
