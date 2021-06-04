@@ -1,5 +1,275 @@
 # 2020cce
 
+## 億萬富翁 
+```C
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char a[100];
+	scanf("%s",&a);
+	for(int i=0;i<strlen(a);i++){
+	if((strlen(a)-i)%3==0 && i!=0 )	printf(",");
+	printf("%c",a[i]);
+	}
+}
+```
+## 秒數換算
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	int h=n/60/60;
+	int m=n/60%60;
+	int s=n%60;
+	printf("%02d:%02d:%02d",h,m,s);
+				//02寬度兩位數且前面為個位數時補0
+}
+```
+## 水杯接水
+```C
+#include <stdio.h>
+int main()
+{	
+	int m,n;
+	scanf("%d%d",&m,&n);
+	if(m%n==0) printf("%d",m/n);
+	else	printf("%d",m/n+1);
+}
+```
+## 平面兩座標的面積(給四個點求四邊形的面積)
+```C
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	int x1,y1,x2,y2;
+	scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
+	printf("%d",abs(x2-x1)*abs(y2-y1));
+}
+//abs=絕對值
+```
+## 整數向量相加 
+```C
+#include <stdio.h>
+int main()
+{
+	int n,a[10],b[10];
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+	scanf("%d",&a[i]);
+	}
+	for(int i=0;i<n;i++){
+	scanf("%d",&b[i]);
+	printf("%d ",a[i]+b[i]);
+	}
+}
+```
+## 求11 +22+33+…+nn
+```C
+#include <stdio.h>
+int main()
+{
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++)
+	ans+=i*10+i;
+	printf("%d",ans);
+	
+}
+```
+## 求兩數之最大公因數
+```C
+#include<iostream>
+using namespace std;
+int GCD(int a, int b){
+  int m,ans=1;
+  if(a<b)m=a;
+  else m=b;
+  for(int i=2;i<=m;i++){
+  if(a%i==0&&b%i==0) ans=i;
+  }
+  return ans;
+}
+int main(){
+  int a,b;cin>>a>>b;
+  cout<<GCD(a,b)<<endl;
+  return 0;
+}
+```
+## 區間測速-超速之王
+```C
+#include <stdio.h>
+int main()
+{
+	int a,min,index=1;
+	scanf("%d",&min);
+	for(int i=2;i<=10;i++){
+	scanf("%d",&a);
+	if(min>a)
+		{
+			min=a;
+			index=i;
+		}
+	}
+	int s=60*60*1.2/min;
+	printf("%d %d",index,s);
+}
+```
+## 10數排序，從大到小排好
+```C
+#include <stdio.h>
+int main()
+{
+	int a[10],i,j,temp;
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<10;i++)
+	{
+		for(j=i+1;j<10;j++)
+		{
+			if(a[i]<a[j])
+			{
+				temp=a[i];
+				a[i]=a[j];
+				a[j]=temp;
+			}
+		}
+	}
+	for(i=0;i<10;i++)
+	{
+		printf("%d ",a[i]);
+	}
+}
+```
+## 正整數平方總和 
+```C
+#include <stdio.h>
+int main()
+{
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++)
+		ans+=i*i;
+	printf("%d",ans);
+}
+```
+## 兩數之間的3倍數總和
+```C
+#include <stdio.h>
+int main()
+{
+	int a,b,ans=0;
+	scanf("%d%d",&a,&b);
+	for(int i=a;i<=b;i++)
+		if(i%3==0) 
+		ans+=i;
+	printf("%d",ans);
+}
+```
+## 判斷座標的象限  
+```C
+#include <stdio.h>
+int main()
+{
+	int x,y;
+	scanf("%d%d",&x,&y);
+	if(x>0&&y>0) printf("1");
+	if(x<0&&y>0) printf("2");
+	if(x<0&&y<0) printf("3");
+	if(x>0&&y<0) printf("4");
+	printf("\n");
+}
+```
+## 輸入n (n>0)， 求n之所有因數和
+```C
+#include <stdio.h>
+int main()
+{
+	int n,ans=0;
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++){
+	if(n%i==0)
+	ans+=i;
+	}
+	printf("%d",ans);
+}
+```
+## 奇數反流
+```C
+#include <stdio.h>
+int main()
+{
+	int n,a[100];
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	for(int i=n-1;i>=0;i--)
+	{
+	if(a[i]%2==1) printf("%d ",a[i]);
+	}
+}
+```
+## 大位王 
+```C
+#include <stdio.h>
+int main()
+{
+	int c;
+	scanf("%d",&c);
+	if(c<0)c=-c;
+	while(c/10>0)
+	{
+	c/=10;
+	}
+	printf("%d\n",c);
+}
+```
+## 輸入西元y年，判斷該y年是否為閏年
+```C
+#include <stdio.h>
+int main()
+{
+	int c;
+	scanf("%d",&c);
+	if(c<0)c=-c;
+	while(c/10>0)
+	{
+	c/=10;
+	}
+	printf("%d\n",c);
+}
+```
+## 把數字倒著印出來
+```C
+#include <stdio.h>
+int main()
+{
+	int c;
+	scanf("%d",&c);
+	if(c<0)c=-c;
+	while(c/10>0)
+	{
+	c/=10;
+	}
+	printf("%d\n",c);
+}
+```
+## 區間測速
+```C
+#include <stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	int s=60*60*1.2/n;
+	printf("%d",s);
+}
+```
 ## 數字個數
 ```C
 #include <stdio.h>
