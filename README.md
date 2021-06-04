@@ -36,7 +36,7 @@ int main()
 	int m,n;
 	scanf("%d%d",&m,&n);
 	if(m%n==0) printf("%d",m/n);
-	else	printf("%d",m/n+1);
+	else printf("%d",m/n+1);
 }
 ```
 ## 平面兩座標的面積(給四個點求四邊形的面積)
