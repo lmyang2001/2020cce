@@ -1,3 +1,4 @@
+//這裡叫PDE:Processing Developing Environment
 import processing.sound.*;
 SoundFile player;
 void setup(){
