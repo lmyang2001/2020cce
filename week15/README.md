@@ -11,4 +11,4 @@ if( player.isPlaying() )時,要stop(), 否則 play(), 記得bell拉進去,程式
 ### 5-2 把倒數計時放進來鐘聲
 if後加上 && !player.isPlaying()
 ## 6. p5.js模式
-利用http://faculty.purchase.edu/joseph.mckay/p5jsconverter 轉換程式碼
+利用 http://faculty.purchase.edu/joseph.mckay/p5jsconverter.html 轉換程式碼
