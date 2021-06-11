@@ -2,23 +2,79 @@
 
 ## 大於漸增數列總和之最小整數
 ```C
-
+#include <stdio.h>
+int main()
+{
+	int K,i,sum=0;
+	scanf("%d",&K);
+	for(i=1;i<=K;i++)
+	{
+		sum+=i;
+		if(sum>K) break;
+	}
+	printf("%d",i);
+}
 ```
 ## 計算級數的值
 ```C
-
+#include <stdio.h>
+int main()
+{
+	int n,sum=0;
+	scanf("%d",&n);
+	for(int i=1;i<=2*n+1;i+=2)
+	sum+=i;
+	printf("f(%d)=%d",n,sum);
+}
 ```
 ## 拆解輸入的正整數
 ```C
-
+#include <stdio.h>
+int main()
+{
+	int n,i=1;
+	scanf("%d",&n);
+	while(n>0)
+	{
+		printf("%d ",(n%10)*i);
+		n/=10;
+		i*=10;
+	}
+}
 ```
 ## 計算一組任意數目的整數的總和
 ```C
-
+#include <stdio.h>
+int main()
+{
+	int n,sum=0;
+	scanf("%d",&n);
+	while(n!=0)
+	{
+		if(n>0)
+		sum+=n;
+	scanf("%d",&n);
+	}
+	printf("%d",sum);
+}
 ```
 ## 整數最大值、最小值
 ```C
-
+#include <stdio.h>
+int main()
+{
+	int n,max,min;
+	scanf("%d",&n);
+	min=n;
+	max=n;
+	while(n!=0)
+	{
+		scanf("%d",&n);
+		if(min>n) min=n;
+		if(max<n) max=n;
+	}
+	printf("[%d,%d]",min,max);
+}
 ```
 ## 億萬富翁 
 ```C
