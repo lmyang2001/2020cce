@@ -4,8 +4,8 @@ void setup(){
   textSize(40);
 }
 float shift=0,v=10;//一開始速度10
-void mousePressed(){
-  v = random(10)+5;
+void mousePressed(){//0...10.0
+  v = random(10)+5;//5...15.0
 }
 void draw(){
   background(98,222,122);
