@@ -307,17 +307,15 @@ int main()
 ```
 ## 輸入西元y年，判斷該y年是否為閏年
 ```C
-#include <stdio.h>
+include <stdio.h>
 int main()
 {
-	int c;
-	scanf("%d",&c);
-	if(c<0)c=-c;
-	while(c/10>0)
-	{
-	c/=10;
-	}
-	printf("%d\n",c);
+	int n;
+	scanf("%d",&n);
+	if(n%4==0 && n%1000!=0)
+		printf("%d is a leap year.\n",n);
+	else 
+		printf("%d is not a leap year.\n",n);
 }
 ```
 ## 把數字倒著印出來
@@ -325,14 +323,13 @@ int main()
 #include <stdio.h>
 int main()
 {
-	int c;
-	scanf("%d",&c);
-	if(c<0)c=-c;
-	while(c/10>0)
-	{
-	c/=10;
+	int a[10],i;
+	for(i=0;i<10;i++){
+		scanf("%d",&a[i]);
 	}
-	printf("%d\n",c);
+	for(i=9;i>=0;i--){
+		printf("%d ",a[i]);
+	}
 }
 ```
 ## 區間測速
